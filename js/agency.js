@@ -32,7 +32,8 @@
 
     // Bootstrap Crousel
     $('.carousel').carousel({
-        interval: 7000
+        // interval: 7000
+        interval: false
     })
 
     // change logo in colapsed navmenu
