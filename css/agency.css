@@ -366,15 +366,15 @@ section h4 {
   color: #32cd32; }
 
 #team .carousel {
-  height: 300px;
-  padding: 20px 200px; }
+  padding: 20px 200px 80px; }
 
-#team prev-icon
-.carousel-control {
-  padding-top: 100px; }
-
-#team .carousel-control.left, #team .carousel-control.right {
+#team .carousel-control {
+  display: flex;
+  align-items: center;
   background-image: none; }
+
+#team .carousel-control {
+  opacity: 1; }
 
 #team .carousel-control.left > .control-icon, #team .carousel-control.right > .control-icon {
   display: block;
@@ -382,29 +382,45 @@ section h4 {
   height: 60px;
   border-radius: 50%; }
 
-#team .carousel-control.left .control-icon {
+#team .carousel-control.left > .control-icon {
   background: url("../img/prev-icon.png") center center no-repeat; }
 
-#team .carousel-control.right .control-icon {
+#team .carousel-control.right > .control-icon {
   background: url("../img/next-icon.png") center center no-repeat; }
 
-#team .carousel-control .glyphicon-chevron-left, #team .carousel-control .glyphicon-chevron-right, #team .carousel-control .icon-next, #team .carousel-control .icon-prev {
-  font-size: 50px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: -25%; }
+#team .carousel-control.left > .control-icon:hover {
+  background: url("../img/prev-icon-hover.png") center center no-repeat; }
+
+#team .carousel-control.right > .control-icon:hover {
+  background: url("../img/next-icon-hover.png") center center no-repeat; }
 
 #team .carousel-inner > .item {
+  overflow: hidden; }
+
+#team .carousel-inner > .item.active {
   overflow: hidden; }
 
 #team .carousel-inner > .item > img {
   display: inline;
   border-radius: 50%; }
 
-#team .carousel-inner > .item .deccriptions {
-  display: inline-block;
-  margin: 0;
-  padding-top: 40px; }
+#team .carousel-inner > .item .feedback {
+  display: inline-flex;
+  align-items: center;
+  margin: 0; }
+
+#team .carousel-inner > .item .feedback p, #team .carousel-inner > .item .feedback span {
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  font-style: italic; }
+
+#team .carousel-inner > .item .feedback p {
+  margin-bottom: 10px; }
+
+#team .carousel-inner > .item .feedback span {
+  display: block;
+  text-align: right; }
 
 #team .carousel-indicators li {
   background-color: #A9A9A9;
