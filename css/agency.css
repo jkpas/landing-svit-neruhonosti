@@ -5,7 +5,8 @@
  */
 body {
   overflow-x: hidden;
-  font-family: 'Raleway', "Helvetica Neue", sans-serif; }
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  padding-right: 0; }
 
 .text-muted {
   color: #777777; }
@@ -279,6 +280,10 @@ fieldset[disabled] .btn-xl.focus {
   border: none;
   border-radius: 25px; }
 
+.welcome .welcome-btn:hover {
+  background-color: #32cd32;
+  color: #ffffff; }
+
 .welcome .down-btn {
   position: absolute;
   height: 40px;
@@ -371,6 +376,7 @@ section h4 {
 #team .carousel-control {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-image: none; }
 
 #team .carousel-control {
@@ -394,19 +400,11 @@ section h4 {
 #team .carousel-control.right > .control-icon:hover {
   background: url("../img/next-icon-hover.png") center center no-repeat; }
 
-#team .carousel-inner > .item {
-  overflow: hidden; }
-
-#team .carousel-inner > .item.active {
-  overflow: hidden; }
-
 #team .carousel-inner > .item > img {
   display: inline;
   border-radius: 50%; }
 
 #team .carousel-inner > .item .feedback {
-  display: inline-flex;
-  align-items: center;
   margin: 0; }
 
 #team .carousel-inner > .item .feedback p, #team .carousel-inner > .item .feedback span {
@@ -420,7 +418,8 @@ section h4 {
 
 #team .carousel-inner > .item .feedback span {
   display: block;
-  text-align: right; }
+  text-align: right;
+  padding-right: 10px; }
 
 #team .carousel-indicators li {
   background-color: #A9A9A9;
@@ -445,84 +444,161 @@ section h4 {
 aside.clients img {
   margin: 50px auto; }
 
-section#contact {
-  background-color: #222222;
-  background-image: url("../img/map-image.png");
+#main-form {
+  background-image: url("../img/main-form-bg.png");
   background-position: center;
   background-repeat: no-repeat; }
 
-section#contact .section-heading {
-  color: white; }
+#main-form .section-heading, #main-form .section-subheading {
+  color: #ffffff;
+  margin-bottom: 20px; }
 
-section#contact .form-group {
+#contactForm {
   margin-bottom: 25px; }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px; }
+#contactForm .form-group {
+  margin-bottom: 20px; }
 
-section#contact .form-group input.form-control {
-  height: auto; }
+#contactForm .form-group input {
+  padding: 10px;
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background: #cbffcb; }
 
-section#contact .form-group textarea.form-control {
-  height: 236px; }
+#contactForm .form-group input:focus {
+  background: #ffffff; }
 
-section#contact .form-control:focus {
+#contactForm .form-group .help-block {
+  margin-bottom: 0; }
+
+#contactForm .form-group .help-block ul {
+  margin-bottom: 0;
+  padding: 0;
+  color: #ffffff; }
+
+#contactForm .form-group .help-block ul li {
+  font-size: 14px; }
+
+#contactForm textarea {
+  padding: 10px;
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background: #cbffcb; }
+
+#contactForm textarea:focus {
+  background: #ffffff; }
+
+#contactForm textarea.form-control {
+  height: 160px;
+  margin-bottom: 5px; }
+
+#contactForm .notation-wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  color: #ffffff; }
+
+#contactForm .notation-wrap .star {
+  font-size: 30px; }
+
+#contactForm .notation-wrap .notation {
+  font-size: 12px;
+  padding-top: 5px; }
+
+#contactForm .submit-btn {
+  width: 100%;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding: 4px; }
+
+#contactForm .submit-btn:hover {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #32cd32; }
+
+.form-control:focus {
   border-color: transparent;
   box-shadow: none; }
 
-section#contact ::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  color: #eeeeee; }
+  font-weight: 500;
+  font-size: 14px;
+  color: #9da6a8; }
 
-section#contact :-moz-placeholder {
+:-moz-placeholder {
   /* Firefox 18- */
   font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  color: #eeeeee; }
+  font-weight: 500;
+  font-size: 14px;
+  color: #9da6a8; }
 
-section#contact ::-moz-placeholder {
+::-moz-placeholder {
   /* Firefox 19+ */
   font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  color: #eeeeee; }
+  font-weight: 500;
+  font-size: 14px;
+  color: #9da6a8; }
 
-section#contact :-ms-input-placeholder {
+:-ms-input-placeholder {
   font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  color: #eeeeee; }
+  font-weight: 500;
+  font-size: 14px;
+  color: #9da6a8; }
 
-section#contact .text-danger {
-  color: #e74c3c; }
+#success .alert {
+  position: relative;
+  background-color: #ffffff;
+  color: #9da6a8;
+  font-size: 12px;
+  font-weight: 300px;
+  padding: 15px; }
+
+#success .alert .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: none;
+  height: 16px;
+  width: 16px;
+  background: url("../img/close-icon.png") center center no-repeat; }
 
 footer {
   padding: 25px 0;
-  text-align: center; }
+  text-align: center;
+  background-color: #2cb82c; }
 
-footer span.copyright {
-  line-height: 40px;
+footer span.copyright, footer span.web-dev {
+  display: block;
+  text-align: left;
+  line-height: 26px;
   font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  text-transform: none; }
-
-footer ul.quicklinks {
-  margin-bottom: 0;
-  line-height: 40px;
-  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
   text-transform: none; }
 
 ul.social-buttons {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding-top: 10px; }
 
 ul.social-buttons li a {
   display: block;
-  background-color: #222222;
+  background-color: #ffffff;
   height: 40px;
   width: 40px;
   border-radius: 100%;
   font-size: 20px;
   line-height: 40px;
-  color: white;
+  color: #249724;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -537,77 +613,115 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 .btn:active:focus {
   outline: none; }
 
-.portfolio-modal .modal-dialog {
-  margin: 0;
-  height: 100%;
-  width: auto; }
+.modal-form {
+  padding-right: 0 !important; }
 
-.portfolio-modal .modal-content {
+.modal-form .modal-dialog {
+  height: 90%;
+  width: 90%; }
+
+.modal-form .modal-content {
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
+  border-radius: 6px;
   min-height: 100%;
-  padding: 100px 0;
+  padding: 30px 0;
   text-align: center; }
 
-.portfolio-modal .modal-content h2 {
+.modal-form .modal-content h2 {
   margin-bottom: 15px;
   font-size: 3em; }
 
-.portfolio-modal .modal-content p {
+.modal-form .modal-content p {
   margin-bottom: 30px; }
 
-.portfolio-modal .modal-content p.item-intro {
+.modal-form .modal-content p.item-intro {
   margin: 20px 0 30px;
   font-family: 'Raleway', "Helvetica Neue", sans-serif;
   font-style: italic;
   font-size: 16px; }
 
-.portfolio-modal .modal-content ul.list-inline {
+.modal-form .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0; }
 
-.portfolio-modal .modal-content img {
+.modal-form .modal-content img {
   margin-bottom: 30px; }
 
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer; }
+.modal-form .modal-content .section-heading, .modal-form .modal-content .section-subheading {
+  color: #656667; }
 
-.portfolio-modal .close-modal:hover {
+.modal-form .modal-content .section-subheading {
+  margin-bottom: 30px; }
+
+.modal-form .modal-content #contactForm .form-group input {
+  border: 2px solid #32cd32;
+  color: #000000;
+  background: #ffffff; }
+
+.modal-form .modal-content #contactForm .form-group input:focus {
+  background: #ffffff; }
+
+.modal-form .modal-content #contactForm .form-group .help-block {
+  margin-bottom: 0; }
+
+.modal-form .modal-content #contactForm .form-group .help-block ul {
+  color: #32cd32; }
+
+.modal-form .modal-content #contactForm textarea {
+  border: 2px solid #32cd32;
+  color: #000000;
+  background: #ffffff;
+  height: 100px; }
+
+.modal-form .modal-content #contactForm .notation-wrap {
+  color: #32cd32; }
+
+.modal-form .modal-content #contactForm .submit-btn {
+  width: 100%;
+  border: 2px solid #32cd32;
+  background: #32cd32;
+  color: #ffffff; }
+
+.modal-form .modal-content #contactForm .submit-btn:hover {
+  background: #ffffff;
+  color: #32cd32; }
+
+.modal-form .modal-content .form-control:focus {
+  border-color: transparent;
+  box-shadow: none; }
+
+.modal-form .modal-content ::-webkit-input-placeholder {
+  color: #32cd32; }
+
+.modal-form .modal-content :-moz-placeholder {
+  /* Firefox 18- */
+  color: #32cd32; }
+
+.modal-form .modal-content ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #32cd32; }
+
+.modal-form .modal-content :-ms-input-placeholder {
+  color: #32cd32; }
+
+.modal-form .close-modal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  top: 5px;
+  right: 25px;
+  cursor: pointer;
+  background: url("../img/close-icon-big.png") center center no-repeat; }
+
+.modal-form .close-modal:hover {
   opacity: 0.3; }
 
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #222222;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051; }
-
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #222222;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052; }
-
-.portfolio-modal .modal-backdrop {
+.modal-form .modal-backdrop {
   opacity: 0;
   display: none; }
 
