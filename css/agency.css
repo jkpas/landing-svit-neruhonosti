@@ -155,6 +155,59 @@ fieldset[disabled] .btn-xl.focus {
   max-width: 1200px;
   width: 100%; }
 
+section {
+  padding: 40px 0 20px; }
+
+section h2.section-heading {
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 10px 0 40px;
+  color: #656667; }
+
+section h3.section-subheading {
+  font-size: 22px;
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 40px; }
+
+section h4 {
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none; }
+
+section p {
+  font-family: 'Raleway', "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none; }
+
+@media (max-width: 992px) {
+  section {
+    padding: 40px 0 20px; }
+  section h2.section-heading {
+    font-size: 36px;
+    margin: 0 0 30px; }
+  section h3.section-subheading {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 28px; } }
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0 0 0; }
+  section h2.section-heading {
+    font-size: 30px;
+    margin: 0 0 20px; }
+  section h3.section-subheading {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 26px; } }
+
 .navbar-custom {
   background-color: transparent;
   border-color: transparent;
@@ -241,6 +294,61 @@ fieldset[disabled] .btn-xl.focus {
   background-color: transparent;
   color: #5d5d5d; }
 
+@media (min-width: 768px) {
+  .navbar-custom .navbar-header {
+    width: auto; } }
+
+@media (max-width: 768px) {
+  .navbar-custom .navbar-header .navbar-toggle .fa-bars {
+    font-size: 30px; }
+  .navbar-custom .navbar-header .navbar-brand img {
+    height: 40px; }
+  .navbar-custom .navbar-header .navbar-brand .navbar-nav > .active > a {
+    border-radius: 3px; }
+  .navbar-custom .navbar-collapse {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #2eb62f;
+    margin: 0; }
+  .navbar-custom .nav {
+    text-align: center; }
+  .navbar-custom .nav li {
+    margin-bottom: 10px; }
+  .navbar-custom .nav li a {
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px; }
+  .navbar-custom.affix {
+    padding: 15px 10px 0px; }
+  .navbar-custom.affix .navbar-brand {
+    padding-top: 5px; }
+  .navbar-custom.affix .navbar-brand img {
+    height: 30px; }
+  .navbar-custom.affix .navbar-header {
+    padding-right: 0; }
+  .navbar-custom.affix .navbar-header .navbar-toggle {
+    margin: 0; }
+  .navbar-custom.affix .navbar-header .navbar-toggle .fa-bars {
+    color: #32cd32;
+    font-size: 30px; }
+  .navbar-custom.affix .navbar-collapse {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #ffffff;
+    margin: 0; }
+  .navbar-custom.affix .nav li a {
+    font-size: 0.9em;
+    color: #32cd32;
+    padding: 5px 15px; }
+  .navbar-custom.affix .nav li.active {
+    display: inline-block; }
+  .navbar-custom.affix .nav li.active a {
+    color: #32cd32;
+    border-bottom: none;
+    opacity: .4; } }
+
 .welcome {
   height: 100vh;
   background-image: url("../img/welcome-bg.png");
@@ -307,47 +415,13 @@ fieldset[disabled] .btn-xl.focus {
   .welcome .intro-text .intro-heading {
     margin-bottom: 50px; } }
 
-section {
-  padding: 40px 0 20px; }
-
-section h2.section-heading {
-  font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  margin: 10px 0 40px;
-  color: #656667; }
-
-section h3.section-subheading {
-  font-size: 22px;
-  font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  text-transform: none;
-  font-weight: 400;
-  margin-bottom: 40px; }
-
-section h4 {
-  font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  text-transform: none; }
-
-section p {
-  font-family: 'Raleway', "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  text-transform: none; }
-
-@media (max-width: 992px) {
-  section {
-    padding: 40px 0 20px; }
-  section h2.section-heading {
-    font-size: 36px;
-    margin: 0 0 30px; }
-  section h3.section-subheading {
-    font-size: 20px;
-    margin-bottom: 40px;
-    line-height: 28px; } }
+@media (max-width: 768px) {
+  .welcome .intro-text {
+    padding: 180px 10px 30px; }
+  .welcome .intro-text .intro-lead-in {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px; } }
 
 #advantages .advantages-item {
   height: 300px; }
@@ -388,6 +462,28 @@ section p {
     padding: 0 20px 0 80px; }
   #advantages ul .advantages-item:nth-child(even) {
     padding: 0 80px 0 20px; } }
+
+@media (max-width: 768px) {
+  #advantages ul {
+    padding: 0; }
+  #advantages ul .advantages-item {
+    height: 200px;
+    margin-bottom: 20px; }
+  #advantages ul .advantages-item div {
+    padding-top: 120px;
+    background-position: 40px center; }
+  #advantages ul .advantages-item:nth-child(odd) {
+    padding: 0 50px; }
+  #advantages ul .advantages-item:nth-child(even) {
+    padding: 0 50px; }
+  #advantages ul .advantages-item:nth-child(1) > div {
+    background: #f0f4f5 url("../img/icon-hand.png") center 30px no-repeat; }
+  #advantages ul .advantages-item:nth-child(2) > div {
+    background: #f0f4f5 url("../img/icon-money.png") center 30px no-repeat; }
+  #advantages ul .advantages-item:nth-child(3) > div {
+    background: #f0f4f5 url("../img/icon-clock.png") center 30px no-repeat; }
+  #advantages ul .advantages-item:nth-child(4) > div {
+    background: #f0f4f5 url("../img/icon-diamond.png") center 30px no-repeat; } }
 
 #technology .steps .steps-item {
   height: 300px;
@@ -640,6 +736,16 @@ footer span.copyright, footer span.web-dev {
   font-size: 14px;
   text-transform: none; }
 
+@media (max-width: 768px) {
+  footer {
+    padding: 20px 0; }
+  footer span.copyright, footer span.web-dev {
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px; }
+  footer .social-buttons {
+    text-align: center; } }
+
 ul.social-buttons {
   margin-bottom: 0;
   padding-top: 10px; }
@@ -816,6 +922,11 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
   .modal-form .modal-content #contactForm .submit-btn:hover {
     background: #ffffff;
     color: #32cd32; } }
+
+@media (max-width: 768px) {
+  .modal-form .modal-dialog {
+    width: auto;
+    height: auto; } }
 
 ::-moz-selection {
   text-shadow: none;
@@ -1057,3 +1168,7 @@ body {
   100% {
     transform: rotate(0deg) scale(0.7) skew(1deg);
     opacity: .2; } }
+
+@media (max-width: 768px) {
+  #popup_toggle {
+    display: none; } }
